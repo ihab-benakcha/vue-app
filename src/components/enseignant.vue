@@ -131,7 +131,7 @@
       },
       getListEtudiant: function() {    
                 let self = this    
-                axios.get("/api/list_etudiant")    
+                axios.get("/admin/getEtudiants")    
                     .then((response) => {    
                         console.log(response)    
                         self.$set(this, "list", response.data.list)    
